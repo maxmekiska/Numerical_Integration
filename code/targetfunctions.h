@@ -7,4 +7,6 @@ float x_cube(float x);
 
 float one_over_x(float x);
 
+float sin_x_over_x(float x);
+
 #endif

@@ -13,3 +13,7 @@ float one_over_x(float x){
   return 1 / x;
 }
 
+float sin_x_over_x(float x){
+  return (sin(x))/x; 
+}
+
