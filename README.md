@@ -2,6 +2,9 @@
 
 Scientific computation - Exploring numerical integration for definite integrals.
 
+## How to Compile the code with gcc?
+
+gcc -Wall main.c midpoint.c trapezoidal.c tfunctions.c simpsons.c -o integrate
 
 ## References
 
