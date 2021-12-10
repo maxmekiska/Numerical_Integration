@@ -1,5 +1,20 @@
 #include "numericintegration.h"
 
+/*
+ * Function:  trapezoidal 
+ * -----------------------
+ * numerical integration via the trapezoidal rule algorithm:
+ * 
+ * Tn = delta x * 1/2 * (f(x0) + 2f(x1) + 2f(x2) + ... + 2f(xn-1) + f(xn))
+ * 
+ *  delta (double)      : length of subintervals = (upper/lower)/ subintervals n
+ *  upper (float)       : upper integral limit
+ *  lower (float)	: lower integral limit
+ *  (*f)(float) (float) : function to be numerically integrated
+ *
+ *  returns: numerical evaluation of integral.
+ */
+
 float trapezoidal(float delta, float upper, float lower, float (*f)(float)) {
   float interval = lower;
   float deltax;
